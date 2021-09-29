@@ -1,24 +1,24 @@
 <template>
-  <div class="flex flex-col h-screen max-h-screen">
+  <div class="flex flex-col h-screen max-h-screen font-mono">
     <!-- Search / Results -->
     <div
-      class="z-20 flex justify-center relative bg-hero-pattern bg-cover px-4 pt-8 pb-32"
+      class="z-20 flex justify-center relative bg-hero-pattern bg-cover px-4 pt-8 pb-32 "
     >
       <!-- Search Input -->
       <div class="w-full max-w-screen-sm">
-        <h1 class="text-white text-center text-3xl pb-4">IP Address Tracker</h1>
+        <h1 class="text-white text-center text-3xl pb-4">IP Tracker</h1>
         <div class="flex">
           <input
             v-model="queryIp"
-            class="flex-1 py-3 px-2 rounded-tl-md rounded-bl-md focus:outline-none"
+            class="flex-1 py-3 px-2 rounded-tl-md rounded-bl-md focus:outline-none pl-7"
             type="text"
             placeholder="Search for any IP address or leave empty to get your ip info"
           />
           <i
             @click="getIpInfo"
             class="cursor-pointer
-          bg-black
-          text-white
+          bg-blue-400
+          text-black
           px-4
           rounded-tr-md
           rounded-br-md
@@ -33,7 +33,7 @@
     </div>
 
     <!-- Map -->
-    <div id="mapid" class="h-full z-10"></div>
+    <div id="mapid" class="h-full w-100 z-10"></div>
   </div>
 </template>
 
